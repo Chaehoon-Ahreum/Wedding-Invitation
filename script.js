@@ -518,11 +518,15 @@
     // Map links
     const kakaoLink = $('#link-kakao-map');
     const naverLink = $('#link-naver-map');
+     const tmapLink = $('#link-tmap');
     if (kakaoLink && c.wedding.mapLinks.kakao) {
       kakaoLink.href = c.wedding.mapLinks.kakao;
     }
     if (naverLink && c.wedding.mapLinks.naver) {
       naverLink.href = c.wedding.mapLinks.naver;
+    }
+    if (tmapLink && c.wedding.mapLinks.tmap) {
+      tmapLink.href = c.wedding.mapLinks.tmap;
     }
   }
 
