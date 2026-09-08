@@ -386,6 +386,10 @@ a {
   flex-shrink: 0;
 }
 
+
+
+
+/*
 /* ── Story Section ── */
 .story {
   background: #fff;
@@ -503,6 +507,9 @@ a {
   border-color: #999;
   color: #000;
 }
+
+*/
+
 
 /* ── Photo Modal ── */
 .modal-overlay {
