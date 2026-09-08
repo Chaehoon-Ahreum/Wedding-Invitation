@@ -316,8 +316,8 @@ a {
 
 .date-circle {
   position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
+  top: 45% !important;
+  left: 45% !important;
   transform: translate(-50%, -50%) !important;
   width: 32px !important;
   height: 32px !important;
@@ -325,7 +325,7 @@ a {
   align-items: center !important;
   justify-content: center !important;
   border-radius: 50% !important;
-  background-color: #f4a6b8 !important;
+  background-color: #fcd9e7 !important;
   color: #fff !important;
   font-size: 12px !important;
   font-weight: 500 !important;
