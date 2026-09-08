@@ -46,7 +46,9 @@ const CONFIG = {
     tel: "0507-1338-9999",
     mapLinks: {
       kakao: "https://place.map.kakao.com/10931903",
-      naver: "https://map.naver.com/p/entry/place/38325837?c=15.00,0,0,0,dh&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609080943%26locale%3Dko%26svcName%3Dmap_pcv5%26from%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609080943%26locale%3Dko%26svcName%3Dmap_pcv5"
+      naver: "https://map.naver.com/p/entry/place/38325837?c=15.00,0,0,0,dh&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609080943%26locale%3Dko%26svcName%3Dmap_pcv5%26from%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609080943%26locale%3Dko%26svcName%3Dmap_pcv5",
+      tmap: "https://tmap.life/4c240a74"
+
     }
   },
 
