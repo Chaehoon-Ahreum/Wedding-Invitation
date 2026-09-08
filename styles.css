@@ -246,66 +246,104 @@ a {
 
 
 
-/* ── Wedding Calendar ── */
-.wedding-calendar {
-  max-width: 300px;
-  margin: 0 auto 48px;
-    background: #fafafa;
+
+/* ─── Calendar (inline in location) ─── */
+.calendar-inline {
+  margin-top: var(--spacing-lg);
 }
 
-.calendar-title {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: #333;
-  margin-bottom: 20px;
+.calendar {
+  max-width: 360px;
+  margin: 0 auto var(--spacing-lg);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 20px rgba(74, 94, 59, 0.06);
+  border: 1px solid rgba(139, 158, 126, 0.15);
 }
 
-.calendar-week,
-.calendar-days {
+.calendar__header {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-forest);
+}
+
+.calendar__weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  margin-bottom: 0.25rem;
 }
 
-.calendar-week {
-  margin-bottom: 10px;
+.calendar__weekday {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
-.calendar-week span {
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: #aaa;
+.calendar__weekday:first-child {
+  color: #c97070;
 }
 
-.calendar-days {
-  row-gap: 8px;
+.calendar__weekday:last-child {
+  color: #6a8caf;
 }
 
-.calendar-days span {
-  position: relative;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+}
+
+.calendar__day {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
   font-weight: 300;
-  color: #555;
+  color: var(--color-text-light);
+  position: relative;
 }
 
-.calendar-days .wedding-day {
-  font-weight: 500;
-  color: #000;
+.calendar__day:nth-child(7n+1) {
+  color: #c97070;
 }
 
-.calendar-days .heart {
-  position: absolute;
-  top: -1px;
-  right: 7px;
-  font-size: 9px;
-  line-height: 1;
-  color: #999;
+.calendar__day:nth-child(7n) {
+  color: #6a8caf;
 }
+
+.calendar__day.is-empty {
+  visibility: hidden;
+}
+
+.calendar__day.is-today {
+  font-weight: 700;
+  color: #fff;
+  background: var(--color-sage);
+  border-radius: 50%;
+}
+
+.calendar-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
 
 
 
