@@ -190,7 +190,7 @@
     const heroImg = $('.hero-image');
     if (heroImg) {
       heroImg.src = 'images/hero/1.jpg';
-      heroImg.alt = `${c.groom.name} & ${c.bride.name}`;
+      heroImg.alt = `${c.groom.name} | ${c.bride.name}`;
     }
 
     const heroNames = $('.hero-names');
