@@ -113,7 +113,7 @@
     // 커튼 내용 채우기
     const names = $('.curtain-names', overlay);
     const date = $('.curtain-date', overlay);
-    if (names) names.textContent = `${c.groom.nameEn} | ${c.bride.nameEn}`;
+    if (names) names.textContent = `${c.groom.nameEn} & ${c.bride.nameEn}`;
     if (date) date.textContent = `${dateInfo.year}. ${String(dateInfo.month).padStart(2, '0')}. ${String(dateInfo.day).padStart(2, '0')}`;
 
     // 열기 버튼
@@ -190,12 +190,12 @@
     const heroImg = $('.hero-image');
     if (heroImg) {
       heroImg.src = 'images/hero/1.jpg';
-      heroImg.alt = `${c.groom.name} | ${c.bride.name}`;
+      heroImg.alt = `${c.groom.name} & ${c.bride.name}`;
     }
 
     const heroNames = $('.hero-names');
     if (heroNames) {
-      heroNames.innerHTML = `${c.groom.nameEn}<span class="ampersand">|</span>${c.bride.nameEn}`;
+      heroNames.innerHTML = `${c.groom.nameEn}<span class="ampersand">&</span>${c.bride.nameEn}`;
     }
 
     const heroDate = $('.hero-date');
