@@ -9,6 +9,7 @@
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
+  
   function formatDate(dateStr) {
     const d = new Date(dateStr);
     const year = d.getFullYear();
@@ -112,7 +113,7 @@
     // 커튼 내용 채우기
     const names = $('.curtain-names', overlay);
     const date = $('.curtain-date', overlay);
-    if (names) names.textContent = `${c.groom.nameEn} & ${c.bride.nameEn}`;
+    if (names) names.textContent = `${c.groom.nameEn} | ${c.bride.nameEn}`;
     if (date) date.textContent = `${dateInfo.year}. ${String(dateInfo.month).padStart(2, '0')}. ${String(dateInfo.day).padStart(2, '0')}`;
 
     // 열기 버튼
