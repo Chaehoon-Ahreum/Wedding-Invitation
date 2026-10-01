@@ -316,8 +316,8 @@ a {
 
 .date-circle {
   position: absolute !important;
-  top: 45% !important;
-  left: 45% !important;
+  top: 50% !important;
+  left: 50% !important;
   transform: translate(-50%, -50%) !important;
   width: 32px !important;
   height: 32px !important;
